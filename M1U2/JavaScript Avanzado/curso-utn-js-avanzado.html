@@ -31,6 +31,11 @@
         Reset
     </button>
 </span>
+<div class="textarea">
+    <textarea id="texto"></textarea>
+    <br/>
+    <button id="enviarTexto">Enviar Texto</button>
+</div>
 <script>
    
     function reset()
@@ -91,7 +96,16 @@
    cuadrado2.addEventListener("click", cambioColor2);
    cuadrado3.addEventListener("click", cambioColor3);
    reseteo.addEventListener("click", reset); 
-   
+
+   function alertaTexto()
+   {
+    let texto = document.getElementById("texto");
+    let valor = texto.value.length
+    alert(`El texto tiene ${valor} caracteres`);
+   }
+
+   let textoBoton = document.getElementById("enviarTexto");
+   textoBoton.addEventListener("click", alertaTexto);
 </script>
 </body>
 </html>
