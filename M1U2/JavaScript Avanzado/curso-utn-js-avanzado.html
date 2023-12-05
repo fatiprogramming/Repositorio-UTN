@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        button {
+            border: 3px solid aquamarine;
+            margin-bottom: 10px;
+            font-size: large;
+        }
+        .cuadrado
+        {
+            display: inline-block;
+        }
+        
+    </style>
+</head>
+<body>
+<div>
+    <h1>Tarea Unidad 1 Módulo 5</h1>
+    <button class = "cuadrado" id = "cuadrado1">Rojo</button>
+    <br/>
+    <button class = "cuadrado"  id="cuadrado2">Azul</button>
+    <br/>
+    <button class = "cuadrado" id="cuadrado3">Verde</button>
+</div>
+<span>
+    <button id = "botonReset">
+        Reset
+    </button>
+</span>
+<script>
+   
+    function reset()
+    {
+        let body = document.querySelector("body")
+        body.style.backgroundColor = 'white';
+        let boton1 = document.getElementById("cuadrado1");
+        boton1.style.backgroundColor = 'white';
+        let boton2 = document.getElementById("cuadrado2");
+        boton2.style.backgroundColor = 'white';
+        let boton3 = document.getElementById("cuadrado3");
+        boton3.style.backgroundColor = 'white';
+        
+    }
+    function cambioColor1()
+    {
+        let body = document.querySelector("body")
+        body.style.backgroundColor = 'red';
+        let boton1 = document.getElementById("cuadrado1");
+        boton1.style.backgroundColor = 'aquamarine';
+        let boton2 = document.getElementById("cuadrado2");
+        boton2.style.backgroundColor = 'white';
+        let boton3 = document.getElementById("cuadrado3");
+        boton3.style.backgroundColor = 'white';
+        
+    }
+    function cambioColor2()
+    {
+        let body = document.querySelector("body")
+        body.style.backgroundColor = 'blue';
+        let boton2 = document.getElementById("cuadrado2");
+        boton2.style.backgroundColor = 'aquamarine';
+        let boton1 = document.getElementById("cuadrado1");
+        boton1.style.backgroundColor = 'white';
+        let boton3 = document.getElementById("cuadrado3");
+        boton3.style.backgroundColor = 'white';
+        
+    }
+    function cambioColor3()
+    {
+        let body = document.querySelector("body")
+        body.style.backgroundColor = 'green';
+        let boton3 = document.getElementById("cuadrado3");
+        boton3.style.backgroundColor = 'aquamarine';
+        let boton1 = document.getElementById("cuadrado1");
+        boton1.style.backgroundColor = 'white';
+        let boton2 = document.getElementById("cuadrado2");
+        boton2.style.backgroundColor = 'white';
+       
+        
+    }
+    let cuadrado1 = document.getElementById('cuadrado1');
+    let cuadrado2 = document.getElementById('cuadrado2');
+    let cuadrado3 = document.getElementById('cuadrado3');
+    let reseteo = document.getElementById('botonReset');
+
+   cuadrado1.addEventListener("click", cambioColor1);
+   cuadrado2.addEventListener("click", cambioColor2);
+   cuadrado3.addEventListener("click", cambioColor3);
+   reseteo.addEventListener("click", reset); 
+   
+</script>
+</body>
+</html>
