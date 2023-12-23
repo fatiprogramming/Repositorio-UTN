@@ -12,6 +12,7 @@ h3{
 .navbar a
 {
     color:#c19898;
+    overflow: auto;
 }
 .historia
 {
@@ -51,6 +52,7 @@ h3{
     align-items: center;
     text-decoration: none;
     font-size: 30px;
+    overflow: auto;
   }
   .celular
   {
