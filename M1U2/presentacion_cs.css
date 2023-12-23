@@ -6,10 +6,12 @@ p {
     color: coral;
     text-align: center;
 }
-
+ul
+{ 
+    list-style-type: square;
+}
 li {
     color: coral;
-   
 }
 h1 {
     color:brown;
@@ -34,7 +36,7 @@ h2 {
 }
 .informacion {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     margin: 0 20px;
     flex-direction: column;
