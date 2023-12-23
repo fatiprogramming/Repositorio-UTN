@@ -37,32 +37,6 @@ h3{
   .carousel-item img {
     filter: brightness(50%); 
   }
-
-  body {
-    position: relative;
-    padding: 0;
-    margin: 0;
-  }
-  
-  body::before,
-  body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 20%;
-    background-color: #c09595; 
-    border-radius: 50%;
-    z-index: -1; 
-  }
-  
-  body::before {
-    left: -120px;
-  }
-  
-  body::after {
-    right: -120px;
-  }
   .contacto
   {
     margin-bottom: 50px;
