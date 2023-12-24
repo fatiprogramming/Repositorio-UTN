@@ -7,10 +7,25 @@ h3{
 }
 .custom
 {
-  background-size: calc(50vw + 50vh) calc(50vw + 50vh);
+  background-size:auto;
   background: radial-gradient(circle farthest-side at top left, #c19898 40%, transparent 20%), radial-gradient(circle farthest-side at bottom right, #c19898 40%, #f6f6f6 30%);
 }
+@media (max-width: 768px) {
+  .custom {
+    background-size: 120% 120%;
+  }
+}
 
+@media (max-width: 480px) {
+  .custom {
+    background-size: 140% 140%;
+  }
+}
+@media (max-width: 320px) {
+  .custom {
+    background-size: 160% 160%;
+  }
+}
 .navbar a
 {
     color:#c19898;
