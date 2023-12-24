@@ -11,7 +11,6 @@ h3{
   background: radial-gradient(circle farthest-side at top left, #c19898 40%, transparent 20%), radial-gradient(circle farthest-side at bottom right, #c19898 40%, #f6f6f6 30%);
 }
 
-
 .navbar a
 {
     color:#c19898;
@@ -58,7 +57,7 @@ h3{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     overflow: auto;
   }
   .celular
