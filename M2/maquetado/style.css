@@ -6,9 +6,10 @@ h3{
     text-align: center;
 }
 .custom
-{   
-    background: radial-gradient(circle at 10% 20%, rgb(242, 235, 243) 0%, rgb(234, 241, 249) 90.1%);
+{
+  background: radial-gradient(circle farthest-side at top left, #c19898 40%, transparent 20%), radial-gradient(circle farthest-side at bottom right, #c19898 40%, #f6f6f6 30%);
 }
+
 .navbar a
 {
     color:#c19898;
@@ -28,6 +29,10 @@ h3{
     padding: 30px 0px;
     margin-bottom: 40px;
     overflow: auto;
+    background-color: aliceblue;
+}
+.historia img{
+  border: #c09595 solid 2px;
 }
 
 .carrousel
