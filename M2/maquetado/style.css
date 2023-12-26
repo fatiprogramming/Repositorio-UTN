@@ -13,8 +13,8 @@ body
 [id]::before { /*Para que haya un margen encima de cada sección marcada por id*/
   content: "";
   display: block;
-  height: 80px; /* Ajusta el valor según sea necesario */
-  margin-top: -80px; /* Ajusta el valor según sea necesario */
+  height: 80px; 
+  margin-top: -80px; 
   visibility: hidden;
 }
 .custom
