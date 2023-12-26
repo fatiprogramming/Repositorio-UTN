@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Mis proyectos</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,11 +23,14 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#presentacion">Presentación</a>
+                        <a class="nav-link active" aria-current="page" href="#">Presentación</a>
                       </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#proyectos">Proyectos</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#faq">FAQ</a>
+                      </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#info-contacto">Contacto</a>
                         </li>
@@ -43,7 +46,6 @@
     <section class="historia" id="presentacion">
         <div class="container">
             <div class="row">
-              
                 <div class="col-12">
                     <p>Lorem ipsum dolor sit amet consectetur 
                       adipisicing elit. Magni excepturi mollitia
@@ -64,12 +66,13 @@
     </section>
     <br>
     <br>
-    <section class="proyectos-carrusel">
-      <div class="container carrousel" id="proyectos">
+    <section class="proyectos-carrusel" id="proyectos">
+      <div class="container carrousel">
         <div class="row">
           <div class="col-2"></div>
           <div class="col-8">
             <div id="carouselExample" class="carousel slide">
+             <h2 style="text-align: center;">Algunos de mis proyectos</h2>
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <a href="#">
@@ -101,9 +104,80 @@
         </div>
       </div>
     </section>
-    <footer>
+    <section id="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+          </div>
+          <div class="col-8">
+          <div class="accordion">
+            <h2 style="text-align: center;">Preguntas Frecuentes</h2>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Qué servicios ofreces?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Mis servicios</strong>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ratione quisquam quas animi hic error eaque illum aliquam id quaerat commodi consequuntur officiis, esse voluptas nisi voluptate placeat debitis exercitationem?</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿Qué proceso debo hacer para iniciar un proyecto contigo?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Proceso de inicio</strong>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus nam eos quis vero? Nostrum nisi repudiandae, doloremque sit eligendi id magni, eaque inventore mollitia doloribus animi, nesciunt sunt cum vel!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Hay algún seguimiento del progreso del proyecto?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Seguimiento</strong> 
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque nostrum temporibus rem dicta, sunt eveniet dolorum a expedita, error mollitia. Voluptate asperiores perspiciatis magni ipsum, enim totam ea dolore.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Cuánto es el tiempo que tardas en realizar un proyecto?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Plazos</strong> 
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque nostrum temporibus rem dicta, sunt eveniet dolorum a expedita, error mollitia. Voluptate asperiores perspiciatis magni ipsum, enim totam ea dolore.
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </section>
+    <footer id="info-contacto">
       <h3>Contáctame</h3>
-      <div class="contacto" id="info-contacto">
+      <div class="contacto">
         <div class="container info">
           <div class="row">
           <div class="col-6">

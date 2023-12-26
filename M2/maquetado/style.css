@@ -2,12 +2,24 @@
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h3{
+h3
+{
     text-align: center;
+}
+body
+{
+  padding-top: 40px;
+}
+[id]::before { /*Para que haya un margen encima de cada sección marcada por id*/
+  content: "";
+  display: block;
+  height: 80px; /* Ajusta el valor según sea necesario */
+  margin-top: -80px; /* Ajusta el valor según sea necesario */
+  visibility: hidden;
 }
 .custom
 {
-  background-size:auto;
+  
   background: radial-gradient(circle farthest-side at top left, #c19898 40%, transparent 20%), radial-gradient(circle farthest-side at bottom right, #c19898 40%, #f6f6f6 30%);
 }
 @media (max-width: 768px) {
@@ -33,7 +45,7 @@ h3{
 }
 .historia
 {
-  text-align: center;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,3 +104,16 @@ h3{
   {
     text-align: center;
   }
+
+.accordion
+{
+  margin: 30px;
+
+}
+
+.accordion-header button.accordion-button
+{
+  color: #be8181;
+  background-color: #f6f6f6;
+  
+}
