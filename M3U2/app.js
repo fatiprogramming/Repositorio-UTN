@@ -4,8 +4,6 @@ const session = require("express-session");
 const app = express();
 const port = process.env.PORT || 3000;
 
-module.exports = app;
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -23,7 +21,7 @@ app.get("/", function (req, res) {
     <h1>Sesiones en Express.js</h1>
     <p>Conocido: ${conocido}</p>
     <p>Nombre: ${req.session.nombre}</p>
-  `);
+    `);
 });
 
 app.post("/ingresar", function (req, res) {
@@ -52,3 +50,5 @@ app.get("/mostrar-variable", function (req, res) {
 app.listen(port, () => {
   console.log("Servidor escuchando en el puerto " + port);
 });
+
+module.exports = app;
