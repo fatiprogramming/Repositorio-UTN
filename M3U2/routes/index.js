@@ -20,7 +20,7 @@ router.post("/", async (req, res, next) => {
   });
 
   var obj = {
-    to: "imail@mail.com",
+    to: "mail@mail.com",
     subject: "Formulario de contacto",
     html: `${nombre} desea contactarse mediante este correo: ${email}`,
   };
