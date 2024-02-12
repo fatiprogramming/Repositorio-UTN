@@ -1,0 +1,22 @@
+id_emp,nombre,apellido,trabajo,edad,salario,mail
+1,Juan,Hagan,"Programador Senior",32,120000.00,juan_hagan@bignet.com
+2,Gonzalo,Pillai,"Programador Senior",32,110000.00,g_pillai@bignet.com
+3,Ana,Dharma,"Desarrollador Web",27,90000.00,ana@bignet.com
+4,Maria,Anchor,"Desarrollador Web",26,85000.00,mary@bignet.com
+5,Alfred,Fernandez,Programador,31,75000.00,af@bignet.com
+6,Juan,Agüero,Programador,36,85000.00,juan@bignet.com
+7,Eduardo,Sacan,Programador,25,85000.00,eddi@bignet.com
+8,Alejandro,Nanda,Programador,32,70000.00,alenanda@bignet.com
+9,Hernan,Rosso,"Especialista Multimedia",33,90000.00,hernan@bignet.com
+10,Pablo,Simon,"Especialista Multimedia",43,85000.00,ps@bignet.com
+11,Arturo,Hernandez,"Especialista Multimedia",32,75000.00,arturo@bignet.com
+12,Jimena,Cazado,"Diseñador Web",32,110000.00,jimena@bignet.com
+13,Roberto,Luis,"Administrador de sistemas",35,100000.00,roberto@bignet.com
+14,Daniel,Gutierrez,"Administrador de sistemas",34,900000.00,daniel@bignet.com
+15,Miguel,Harper,"Ejecutivo de Ventas Senior",36,120000.00,miguel@bignet.com
+16,Monica,Sanchez,"Ejecutivo de ventas",30,90000.00,monica@bignet.com
+17,Alicia,Simlai,"Ejecutivo de ventas",27,70000.00,alicia@bignet.com
+18,Jose,Iriarte,"Ejecutivo de ventas",27,72000.00,jose@bignet.com
+19,Sabrina,Allende,"Gerente de Soporte tecnico",32,200000.00,sabrina@bignet.com
+20,Pedro,Campeon,"Gerente de finanzas",36,220000.00,pedro@bignet.com
+21,Mariano,Dharma,Presidente,28,300000.00,mariano@bignet.com
