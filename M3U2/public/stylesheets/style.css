@@ -9,7 +9,7 @@ body {
 }
 [id]::before {
   /*Para que haya un margen encima de cada sección marcada por id*/
-  content: "";
+  content: '';
   display: block;
   height: 80px;
   margin-top: -80px;
@@ -124,17 +124,22 @@ body {
   margin-bottom: 10px;
 }
 
-#info-contacto input[type="text"],
-#info-contacto input[type="email"] {
+#info-contacto input[type='text'],
+#info-contacto input[type='email'] {
   width: 200px;
   padding: 5px;
   margin-bottom: 10px;
 }
 
-#info-contacto input[type="submit"] {
+#info-contacto input[type='submit'] {
   padding: 5px 10px;
   background-color: #cc8787;
   color: white;
   border: black solid;
   cursor: pointer;
+}
+#loginForm {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
 }
