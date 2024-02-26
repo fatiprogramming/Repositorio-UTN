@@ -1,5 +1,66 @@
-<h1 class='mt-5 text-center'>Hola, {{persona}}</h1>
-<div class='d-flex justify-content-center text-center'>
-  <a href='./login/logout' class='btn btn-danger'>Cerrar sesión
-    <i class='fas fa-sign-out-alt'></i></a>
+<div class='container' style=' margin: 50px auto'>
+  <div class='row'>
+    <div class='col'>
+      <p class='mt-5 text-center'>Hola, {{persona}}</p>
+      <div class='d-flex justify-content-center text-center'>
+        <a href='./login/logout' class='btn btn-danger'>Cerrar sesión
+          <i class='fas fa-sign-out-alt'></i></a>
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-7'>
+      <h3>Listado de novedades</h3>
+
+    </div>
+    <div class='col-2 text-right'>
+      <a href='#' class='btn btn-sucess'><i class='fa fa-plus'></i>Nuevo</a>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col'>
+      <table class='table'>
+        <thead class='thead-dark'>
+          <tr>
+            <th scope='col'>#</th>
+            <th scope='col'>Título</th>
+            <th scope='col' class='text-center'>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope='row'>1</th>
+            <td>va el titulo</td>
+            <td class='text-center'>
+              <a href='#' class='btn btn-sm btn-secondary'><i
+                  class='fa fa-pencil'
+                ></i></a>
+              <a href='#' class='btn btn-sm btn-secondary'><i
+                  class='fa fa-trash'
+                ></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <tbody>
+    {{#each novedades}}
+      <tr>
+        <th scope='row'>{{id}}</th>
+        <td>{{titulo}}</td>
+        <td class='text-center'>
+          <a href='#' title='Editar' class='btn btn-sm btn-secondary'>
+            <i class='fa fa-pencil'></i></a>
+          <a
+            href='/admin/novedades/eliminar/{{id}}'
+            title='Eliminar'
+            class='btn btn-sm btn-secondary'
+          >
+            <i class='fa fa-trash'></i></a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
 </div>

@@ -1,160 +1,320 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Mi portafolio</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div class="custom">
-    <section class="historia" id="presentacion">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p>Lorem ipsum dolor sit amet consectetur 
-                      adipisicing elit. Magni excepturi mollitia
-                       ipsa repudiandae quae autem provident neque,
-                        aperiam ullam architecto nam? Pariatur quasi, 
-                        quia saepe nisi porro reiciendis fugit placeat!
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Magni excepturi mollitia
-                         ipsa repudiandae quae autem provident neque,
-                          aperiam ullam architecto nam? Pariatur quasi, 
-                          quia saepe nisi porro reiciendis fugit placeat!</p>
-                    <br/>
-                    <img class="computadora image-fluid" src="images/pexels-canvy-mockups-205316.jpg" alt="imagen de historia" width="350" height="300">
-                </div>
-                
+    <link rel='stylesheet' href='stylesheets/style.css' />
+    <link
+      href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'
+      rel='stylesheet'
+      integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN'
+      crossorigin='anonymous'
+    />
+    <script
+      src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'
+      integrity='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL'
+      crossorigin='anonymous'
+    ></script>
+  </head>
+  <body>
+    <div class='custom'>
+      <section class='historia' id='presentacion'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-12'>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                excepturi mollitia ipsa repudiandae quae autem provident neque,
+                aperiam ullam architecto nam? Pariatur quasi, quia saepe nisi
+                porro reiciendis fugit placeat! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Magni excepturi mollitia ipsa
+                repudiandae quae autem provident neque, aperiam ullam architecto
+                nam? Pariatur quasi, quia saepe nisi porro reiciendis fugit
+                placeat!</p>
+              <br />
+              <img
+                class='computadora image-fluid'
+                src='images/pexels-canvy-mockups-205316.jpg'
+                alt='imagen de historia'
+                width='350'
+                height='300'
+              />
             </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <section class="proyectos-carrusel" id="proyectos">
-      <div class="container carrousel">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-8">
-            <div id="carouselExample" class="carousel slide">
-             <h2 style="text-align: center;">Algunos de mis proyectos</h2>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a href="#">
-                  <img src="images/pexels-canvy-mockups-205316.jpg" class="d-block w-100" alt="">
-                </a>
-                </div>
-                <div class="carousel-item">
-                  <a href="#">
-                 <img src="images/pexels-canvy-mockups-205316.jpg" class="d-block w-100" alt="">
-                </a>
-                </div>
-                <div class="carousel-item">
-                  <a href="#">
-                  <img src="images/pexels-canvy-mockups-205316.jpg" class="d-block w-100" alt="">
-                </a>
-              </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="false"></span>
-                <span class="visually-hidden">Siguiente</span>
-              </button>
-            </div>
+
           </div>
-          <div class="col-2"></div>
         </div>
-      </div>
-    </section>
-    <section id="faq">
-      <div class="container">
-        <div class="row">
-          <div class="col-1">
-          </div>
-          <div class="col-10">
-          <div class="accordion" id="accordionExample">
-            <h2 style="text-align: center;">Preguntas Frecuentes</h2>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  ¿Qué servicios ofreces?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>Mis servicios</strong>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ratione quisquam quas animi hic error eaque illum aliquam id quaerat commodi consequuntur officiis, esse voluptas nisi voluptate placeat debitis exercitationem?</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  ¿Qué proceso debo hacer para iniciar un proyecto contigo?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>Proceso de inicio</strong>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus nam eos quis vero? Nostrum nisi repudiandae, doloremque sit eligendi id magni, eaque inventore mollitia doloribus animi, nesciunt sunt cum vel!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  ¿Hay algún seguimiento del progreso del proyecto?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>Seguimiento</strong> 
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque nostrum temporibus rem dicta, sunt eveniet dolorum a expedita, error mollitia. Voluptate asperiores perspiciatis magni ipsum, enim totam ea dolore.
-                  </p>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    ¿Cuánto es el tiempo que tardas en realizar un proyecto?
-                  </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>Plazos</strong> 
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque nostrum temporibus rem dicta, sunt eveniet dolorum a expedita, error mollitia. Voluptate asperiores perspiciatis magni ipsum, enim totam ea dolore.
-                    </p>
+      </section>
+      <br />
+      <br />
+      <section class='proyectos-carrusel' id='proyectos'>
+        <div class='container carrousel'>
+          <div class='row'>
+            <div class='col-2'></div>
+            <div class='col-8'>
+              <div id='carouselExample' class='carousel slide'>
+                <h2 style='text-align: center;'>Algunos de mis proyectos</h2>
+                <div class='carousel-inner'>
+                  <div class='carousel-item active'>
+                    <a href='#'>
+                      <img
+                        src='images/pexels-canvy-mockups-205316.jpg'
+                        class='d-block w-100'
+                        alt=''
+                      />
+                    </a>
+                  </div>
+                  <div class='carousel-item'>
+                    <a href='#'>
+                      <img
+                        src='images/pexels-canvy-mockups-205316.jpg'
+                        class='d-block w-100'
+                        alt=''
+                      />
+                    </a>
+                  </div>
+                  <div class='carousel-item'>
+                    <a href='#'>
+                      <img
+                        src='images/pexels-canvy-mockups-205316.jpg'
+                        class='d-block w-100'
+                        alt=''
+                      />
+                    </a>
                   </div>
                 </div>
+                <button
+                  class='carousel-control-prev'
+                  type='button'
+                  data-bs-target='#carouselExample'
+                  data-bs-slide='prev'
+                >
+                  <span
+                    class='carousel-control-prev-icon'
+                    aria-hidden='false'
+                  ></span>
+                  <span class='visually-hidden'>Anterior</span>
+                </button>
+                <button
+                  class='carousel-control-next'
+                  type='button'
+                  data-bs-target='#carouselExample'
+                  data-bs-slide='next'
+                >
+                  <span
+                    class='carousel-control-next-icon'
+                    aria-hidden='false'
+                  ></span>
+                  <span class='visually-hidden'>Siguiente</span>
+                </button>
+              </div>
+            </div>
+            <div class='col-2'></div>
+          </div>
+        </div>
+      </section>
+      <section id='faq'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-1'>
+            </div>
+            <div class='col-10'>
+              <div class='accordion' id='accordionExample'>
+                <h2 style='text-align: center;'>Preguntas Frecuentes</h2>
+                <div class='accordion-item'>
+                  <h2 class='accordion-header'>
+                    <button
+                      class='accordion-button'
+                      type='button'
+                      data-bs-toggle='collapse'
+                      data-bs-target='#collapseOne'
+                      aria-expanded='true'
+                      aria-controls='collapseOne'
+                    >
+                      ¿Qué servicios ofreces?
+                    </button>
+                  </h2>
+                  <div
+                    id='collapseOne'
+                    class='accordion-collapse collapse show'
+                    data-bs-parent='#accordionExample'
+                  >
+                    <div class='accordion-body'>
+                      <strong>Mis servicios</strong>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit ratione quisquam quas animi hic error eaque
+                        illum aliquam id quaerat commodi consequuntur officiis,
+                        esse voluptas nisi voluptate placeat debitis
+                        exercitationem?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <h2 class='accordion-header'>
+                    <button
+                      class='accordion-button collapsed'
+                      type='button'
+                      data-bs-toggle='collapse'
+                      data-bs-target='#collapseTwo'
+                      aria-expanded='false'
+                      aria-controls='collapseTwo'
+                    >
+                      ¿Qué proceso debo hacer para iniciar un proyecto contigo?
+                    </button>
+                  </h2>
+                  <div
+                    id='collapseTwo'
+                    class='accordion-collapse collapse'
+                    data-bs-parent='#accordionExample'
+                  >
+                    <div class='accordion-body'>
+                      <strong>Proceso de inicio</strong>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Possimus nam eos quis vero? Nostrum nisi
+                        repudiandae, doloremque sit eligendi id magni, eaque
+                        inventore mollitia doloribus animi, nesciunt sunt cum
+                        vel!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <h2 class='accordion-header'>
+                    <button
+                      class='accordion-button collapsed'
+                      type='button'
+                      data-bs-toggle='collapse'
+                      data-bs-target='#collapseThree'
+                      aria-expanded='false'
+                      aria-controls='collapseThree'
+                    >
+                      ¿Hay algún seguimiento del progreso del proyecto?
+                    </button>
+                  </h2>
+                  <div
+                    id='collapseThree'
+                    class='accordion-collapse collapse'
+                    data-bs-parent='#accordionExample'
+                  >
+                    <div class='accordion-body'>
+                      <strong>Seguimiento</strong>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nulla eaque nostrum temporibus rem dicta, sunt eveniet
+                        dolorum a expedita, error mollitia. Voluptate asperiores
+                        perspiciatis magni ipsum, enim totam ea dolore.
+                      </p>
+                    </div>
+                  </div>
+                  <div class='accordion-item'>
+                    <h2 class='accordion-header'>
+                      <button
+                        class='accordion-button collapsed'
+                        type='button'
+                        data-bs-toggle='collapse'
+                        data-bs-target='#collapseFour'
+                        aria-expanded='false'
+                        aria-controls='collapseFour'
+                      >
+                        ¿Cuánto es el tiempo que tardas en realizar un proyecto?
+                      </button>
+                    </h2>
+                    <div
+                      id='collapseFour'
+                      class='accordion-collapse collapse'
+                      data-bs-parent='#accordionExample'
+                    >
+                      <div class='accordion-body'>
+                        <strong>Plazos</strong>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Nulla eaque nostrum temporibus rem dicta, sunt
+                          eveniet dolorum a expedita, error mollitia. Voluptate
+                          asperiores perspiciatis magni ipsum, enim totam ea
+                          dolore.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='col-1'></div>
             </div>
           </div>
         </div>
-          <div class="col-1"></div>
+      </section>
+      <div id='novedades' class='row py-4'>
+        <div class='col-md-5 offset-md-2 py-3'>
+          <h2>Novedades</h2>
+          <ul class='lista-novedades'>
+            {{#each novedades}}
+              <li>
+                <a
+                  href='javascript:void(0);'
+                  data-toggle='modal'
+                  data-target='#modal{{_id}}'
+                >
+                  <img src='/images/novedades1.jpg' />
+                  {{titulo}}
+                </a>
+              </li>
+            {{/each}}
+          </ul>
         </div>
+        {{#each novedades}}
+          <!-- Inicia modal -->
+          <div
+            class='modal fade'
+            id='modal{{_id}}'
+            tabindex='-1'
+            role='dialog'
+            aria-labelledby='modalLabel{{_id}}'
+            aria-hidden='true'
+          >
+            <div class='modal-dialog' role='document'>
+              <div class='modal-content'>
+                <div class='modal-header'>
+                  <h5 class='modal-title' id='modalLabel{{_id}}'>{{titulo}}</h5>
+                  <button
+                    type='button'
+                    class='close'
+                    data-dismiss='modal'
+                    aria-label='Close'
+                  >
+                    <span aria-hidden='true'>&times;</span>
+                  </button>
+                </div>
+                <div class='modal-body'>
+                  <!-- Contenido del modal -->
+                  <p>{{subtitulo}}</p>
+                  <p>{{cuerpo}}</p>
+                </div>
+                <div class='modal-footer'>
+                  <button
+                    type='button'
+                    class='btn btn-secondary'
+                    data-dismiss='modal'
+                  >Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Termina modal -->
+        {{/each}}
       </div>
-    </section>
-    <footer id="info-contacto">
-      <h2>Contáctame</h2>
-  <form action="/" method="POST">
-  <label for="name">Nombre completo:</label>
-  <input type="text" id="name" name="nombre" required />
-  <br />
-  <label for="email">Correo electrónico:</label>
-  <input type="email" id="email" name="email" required />
-  <br />
-  <input type="submit" value="Enviar" />
-</form>
-<br>
-{{message}}
-    </footer>
-</body>
+      <footer id='info-contacto'>
+        <h2>Contáctame</h2>
+        <form action='/' method='POST'>
+          <label for='name'>Nombre completo:</label>
+          <input type='text' id='name' name='nombre' required />
+          <br />
+          <label for='email'>Correo electrónico:</label>
+          <input type='email' id='email' name='email' required />
+          <br />
+          <input type='submit' value='Enviar' />
+        </form>
+        <br />
+        {{message}}
+      </footer>
+    </div>
+  </body>
 </html>
