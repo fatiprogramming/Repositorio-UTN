@@ -13,7 +13,10 @@
       <h3>Listado de novedades</h3>
     </div>
     <div class='col-2 text-right'>
-      <a href='#' class='btn btn-success'><i class='fa fa-plus'></i> Nuevo</a>
+      <a href='/admin/novedades/agregar' class='btn btn-success'><i
+          class='fa fa-plus'
+        ></i>
+        Nuevo</a>
     </div>
   </div>
   <div class='row'>
@@ -47,6 +50,10 @@
                   <i class='fa fa-trash'></i>
                   Eliminar
                 </a>
+                <a
+                  href='/admin/novedades/modificar/{{id}}'
+                  class='btn btn-sm btn-secondary'
+                ><i class='fa fa-pencil'></i>Modificar</a>
               </td>
             </tr>
           {{/each}}
@@ -54,4 +61,5 @@
       </table>
     </div>
   </div>
+
 </div>
