@@ -253,7 +253,7 @@
                   data-toggle='modal'
                   data-target='#modal{{_id}}'
                 >
-                  <img src='/images/novedades1.jpg' />
+                  <img src='{{imagen}}' width='120' />
                   {{titulo}}
                 </a>
               </li>
@@ -286,6 +286,7 @@
                 <div class='modal-body'>
                   <!-- Contenido del modal -->
                   <p>{{subtitulo}}</p>
+                  <img src='{{imagen}}' />
                   <p>{{cuerpo}}</p>
                 </div>
                 <div class='modal-footer'>

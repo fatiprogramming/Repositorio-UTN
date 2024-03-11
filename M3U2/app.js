@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
+var fileUpload = require('express-fileupload');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -30,7 +31,7 @@ app.use(
   })
 );
 
- secured = async (req, res, next) => {
+secured = async (req, res, next) => {
   try {
     console.log(req.session.id_usuario);
 
@@ -67,4 +68,10 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 
+app.use(
+  fileUpload({
+    useTempFiles: true,
+    tempFileDir: '/tmp/',
+  })
+);
 module.exports = app;
