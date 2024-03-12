@@ -94,33 +94,25 @@ router.post('/modificar', async (req, res, next) => {
     if (req.body.img_delete === '1') {
       img_id = null;
       borrar_img_vieja = true;
+    } else {
+      if (req.files && Object.keys(req.files).length > 0) {
+        imagen = req.files.imagen;
+        img_id = (await uploader(imagen.tempFilePath)).public_id;
+        borrar_img_vieja = true;
+      }
     }
-
-    if (req.files && Object.keys(req.files).length > 0) {
-      var imagen = req.files.imagen;
-      img_id = (await uploader(imagen.tempFilePath)).public_id;
-      borrar_img_vieja = true;
-    }
-
     if (borrar_img_vieja && req.body.img_original) {
       await destroy(req.body.img_original);
     }
-  } catch (error) {
-    console.log(error);
-    res.render('admin/modificar', {
-      layout: 'admin/layout',
-      error: true,
-      message: 'No se pudo modificar la novedad',
-    });
-  }
 
-  try {
     let obj = {
       titulo: req.body.titulo,
       subtitulo: req.body.subtitulo,
       cuerpo: req.body.cuerpo,
       img_id,
     };
+    console.log(obj);
+
     await novedadesModel.modificarNovedadById(obj, req.body.id);
     res.redirect('/admin/novedades');
   } catch (error) {
@@ -128,7 +120,7 @@ router.post('/modificar', async (req, res, next) => {
     res.render('admin/modificar', {
       layout: 'admin/layout',
       error: true,
-      message: 'No se modificó la novedad',
+      message: 'No se modifico la novedad',
     });
   }
 });

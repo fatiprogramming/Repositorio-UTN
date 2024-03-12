@@ -45,6 +45,12 @@ secured = async (req, res, next) => {
     res.status(500).send('Error interno del servidor');
   }
 };
+app.use(
+  fileUpload({
+    useTempFiles: true,
+    tempFileDir: '/tmp/',
+  })
+);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -68,10 +74,4 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 
-app.use(
-  fileUpload({
-    useTempFiles: true,
-    tempFileDir: '/tmp/',
-  })
-);
 module.exports = app;
