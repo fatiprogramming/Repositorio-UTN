@@ -9,8 +9,14 @@ const destroy = util.promisify(cloudinary.uploader.destroy);
 
 /* GET home page. */
 router.get('/', async function (req, res, next) {
-  var novedades = await novedadesModel.getNovedades();
-  //
+  var novedades;
+  if(req.query.q === undefined){
+    
+      novedades = await novedadesModel.getNovedades();}
+      else {
+        novedades = await novedadesModel.buscarNovedades(req.query.q);
+      }
+    
   novedades = novedades.map((novedad) => {
     if (novedad.img_id) {
       const imagen = cloudinary.image(novedad.img_id, {
@@ -33,6 +39,7 @@ router.get('/', async function (req, res, next) {
     layout: '/admin/layout',
     persona: req.session.nombre,
     novedades,
+    is_search: req.query.q !== undefined, q: req.query.q
   });
 });
 router.get('/eliminar/:id', async (req, res, next) => {
